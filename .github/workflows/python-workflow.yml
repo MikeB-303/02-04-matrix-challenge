@@ -14,8 +14,8 @@ jobs:
         version: ["3.7", "3.8", "3.9", "3.10"]
         platform: [ubuntu-latest, windows-latest, macos-latest ]
         exclude:
-          - platform: ubuntu-latest
-            version: "3.10"
+          - platform: [ubuntu-latest, macos-latest ]
+            version: "3.7"
         include:
           - platform: windows-latest
             version: "3.6"
